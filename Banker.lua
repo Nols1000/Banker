@@ -236,25 +236,6 @@ Banker.stackItems = function()
 			end
 		end
 	end
-
-	-- for i = 0, n(backpackItems)-1, 1 do
-		-- for j = 0, n(enTypes)-1, 1 do
-			-- if vars.iTypes[enTypes[j]] then
-				-- if backpackItems[i] == enTypes[j] then
-					-- for k = 0, n(bankItems)-1, 1 do
-
-						-- local name = {}
-						-- name[0] = GetItemName(BAG_BACKPACK, i):upper()
-						-- name[1] = GetItemName(BAG_BANK, k):upper()
-
-						-- if name[0] == name[1] then
-							-- transferItem(BAG_BACKPACK, BAG_BANK, i, k)
-						-- end
-					-- end
-				-- end
-			-- end
-		-- end
-	-- end
 end
 
 Banker.safeMoney = function()
