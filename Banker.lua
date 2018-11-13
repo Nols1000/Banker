@@ -283,8 +283,8 @@ Banker.transferItem = function(fromBag, toBag, fromSlot, toSlot)
 	local fStackSize = GetSlotStackSize(fromBag, fromSlot)
 	local fName      = GetItemLink(fromBag, fromSlot)
 	local tStackSize = GetSlotStackSize(toBag, toSlot)
-
-	local stack      = (fStackSize + tStackSize) - 100
+	
+	local stack      = (fStackSize + tStackSize) - 200
 
 	if stack <= 0 and fStackSize ~= 0 then
 		if Banker.Lib.stackItem(fromBag, fromSlot, toBag, toSlot, fStackSize, fName) then
