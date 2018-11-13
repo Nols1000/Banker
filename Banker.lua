@@ -45,13 +45,13 @@ Banker.initUI = function()
 	
 	Banker.KeybindStripDescriptor =
 	{
-		{ -- I think you can have more than one button in your group if you add more of these sub-groups
+		{
 			name = SI.get(SI.KB_SYNC_ITEMS),
 			keybind = "SYNC_INVENTORY",
 			callback = function() Banker.stackItems() end,
 			visible = function() return Banker.isBankOpen end,
 		},
-		{ -- I think you can have more than one button in your group if you add more of these sub-groups
+		{
 			name = SI.get(SI.KB_SAFE_MONEY),
 			keybind = "AUTO_DEPOSIT_MONEY",
 			callback = function() Banker.safeMoney() end,
