@@ -1,16 +1,17 @@
 language: minimal
+
 before_deploy:
-- mkdir -p /tmp/addon/Banker
-- cp -R . /tmp/addon/Banker
-- rm -rf /tmp/addon/Banker/.git /tmp/addon/Banker/.travis /tmp/addon/Banker/*.md
-- pushd /tmp/addon && zip -r /tmp/Banker.zip Banker && popd
+  - mkdir -p /tmp/addon/Banker
+  - cp -R . /tmp/addon/Banker
+  - rm -rf /tmp/addon/Banker/.git /tmp/addon/Banker/.travis /tmp/addon/Banker/*.md
+  - pushd /tmp/addon && zip -r /tmp/Banker.zip Banker && popd
 addons:
   apt:
     packages:
     - zip
 deploy:
   - provider: script
-    script: sh .travis/deploy.sh 362 $TRAVIS_TAG 4.2 /tmp/Banker.zip
+    script: sh .travis/deploy.sh $TRAVIS_TAG 4.2 /tmp/Banker.zip
     on:
       repo: Nols1000/Banker
       tags: true
