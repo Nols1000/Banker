@@ -1,0 +1,28 @@
+-- French Tranlation by MrOsmose
+-- (C) 13 May 2014
+-- If you can do better send me a pm
+
+ZO_CreateStringId("SI_BANKER_NAME",										        "Banquier")
+ZO_CreateStringId("SI_BANKER_HEADER_SETTINGS",									"Description")
+ZO_CreateStringId("SI_BANKER_HEADER_ITEM_TYPES",								"Type d'objet")
+ZO_CreateStringId("SI_BANKER_WARNING_ITEM_TYPES",								"If this is true it will transfer automatic items from your inventory to your bank.")
+ZO_CreateStringId("SI_BANKER_DESC_MAIN_TITLE",									"Description")
+ZO_CreateStringId("SI_BANKER_DESC_MAIN",										"Ce mod vous aide � garder votre inventaire propre, en transf�rant automatiquement les objets d�j� sotck� dans votre boite de d�pot.")
+ZO_CreateStringId("SI_BANKER_HEADER_DEVELOPER",									"Configuration développeur")
+ZO_CreateStringId("SI_BANKER_ITEMTYPE_TITLE",									"Itemtype")
+ZO_CreateStringId("SI_BANKER_ITEMTYPE_DESC",									"Filter which Itemtypes should tranferd to your bank.")
+ZO_CreateStringId("SI_BANKER_TITLE_DEBUG",			    						"Montrer les informations de Debug")
+ZO_CreateStringId("SI_BANKER_COMMON_TITLE",										"Common Settings")
+ZO_CreateStringId("SI_BANKER_COMMON_DESC",										"")
+ZO_CreateStringId("SI_BANKER_WARNING_DEVELOPER",								"Activez pour transf�rer les objets d�j� rang� de ce type dans votre boite de d�pot.")
+ZO_CreateStringId("SI_BANKER_MIN_TITLE",										"Minimum d'Or")
+ZO_CreateStringId("SI_BANKER_STEP_TITLE",										"Step")
+ZO_CreateStringId("SI_BANKER_EITEMS_TITLE",										"Transfer d'objets")
+ZO_CreateStringId("SI_BANKER_EMONEY_TITLE",										"Transfer d'argent")
+ZO_CreateStringId("SI_BANKER_MSG_TITLE",										"Montrer les messages de discussion")
+ZO_CreateStringId("SI_BANKER_DEBUG_TITLE",										"Show Debug-Message")
+ZO_CreateStringId("SI_BANKER_KB_TITLE",											"Show Shortcut")
+ZO_CreateStringId("SI_BANKER_KB_SYNC_ITEMS",									"Transfer d'objets")
+ZO_CreateStringId("SI_BANKER_KB_SAFE_MONEY",									"Transfer d'argent")
+ZO_CreateStringId("SI_BINDING_NAME_SYNC_INVENTORY",            					"Transfer d'objets")
+ZO_CreateStringId("SI_BINDING_NAME_AUTO_DEPOSIT_MONEY",     					"Transfer d'argent")

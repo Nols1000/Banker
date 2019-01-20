@@ -1,0 +1,12 @@
+<Bindings>
+    <Layer name="SI_KEYBINDINGS_CATEGORY_GENERAL">
+        <Category name="SI_BANKER_NAME">
+            <Action name="SYNC_INVENTORY">
+                <Down>Banker:stashItems()</Down>
+            </Action>
+			<Action name="AUTO_DEPOSIT_MONEY">
+                <Down>Banker:safeMoney()</Down>
+            </Action>
+        </Category>
+    </Layer>
+</Bindings>

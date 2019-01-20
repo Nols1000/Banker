@@ -1,12 +1,13 @@
 ## Title: Banker
 ## Description: An Addon to keep your inventory clear and easily stack all stackable items in your Bank.
-## Author: Nols1000
-## Version: 1.5
+## Author: Nils-Börge Margotti
+## Version: 2.0.0
 ## APIVersion: 100025
 ## SavedVariables: BankerVariables
-## OptionalDependsOn: LibAddonMenu-2.0
+## OptionalDependsOn: LibAddonMenu-2.0 LibInventory
 
 libs\LibStub\LibStub.lua
+
 libs\LibAddonMenu-2.0\LibAddonMenu-2.0.lua
 libs\LibAddonMenu-2.0\controls\panel.lua
 libs\LibAddonMenu-2.0\controls\submenu.lua
@@ -21,14 +22,22 @@ libs\LibAddonMenu-2.0\controls\header.lua
 libs\LibAddonMenu-2.0\controls\slider.lua
 libs\LibAddonMenu-2.0\controls\texture.lua
 
-core\globalVariables.lua
+libs\LibInventory\LibInventory\GlobalVariables.lua
+libs\LibInventory\LibInventory\LibInventory.lua
 
-localization\SI.lua
-localization\en.lua
-localization\$(language).lua
+src\localization\en.lua
+src\localization\$(language).lua
 
-Settings.lua
+src\Information.lua
+src\Variables.lua
+src\Config.lua
+src\Logging.lua
+src\AddonMenu.lua
 
-Banker.lua
+src\Banker.lua
 
-Bindings.xml
+src\gui\BankSpaceView.xml
+src\gui\BackpackSpaceView.xml
+src\gui\GoldView.xml
+
+src\keybinds\Bindings.xml
