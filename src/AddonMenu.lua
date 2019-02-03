@@ -106,7 +106,7 @@ Banker.menu = {
 	},
 }
 
-for i = 0, #LIB_INVENTORY_ITEMTYPES, 1 do
+for i = 1, #LIB_INVENTORY_ITEMTYPES, 1 do
 	Banker.menu.settings[#Banker.menu.settings + 1] = {
 		type = "checkbox",
 		name = GetString("SI_ITEMTYPE", LIB_INVENTORY_ITEMTYPES[i]),

@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 2.0.0 - ETA End February
+
+- adds Feature: Use premium bank bag
+- adds Feature: Display general information about bank and bagpack and money
+- adds Feature: Display the amount of slots that could be stacked into the bank
+
+## 1.6 - 2019-01-15
+
+- Bump version to 1.6
+
 ## 1.5 - 2018-11-13
 
 - Bump APIVersion to 1000025 (4.2)

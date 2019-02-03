@@ -3,7 +3,7 @@ if Banker == nil then Banker = {} end
 
 -- Addons Variables
 Banker.variables = {
-    version = 8,
+    version = 200,
     defaults = {
         items = true,
         money = true,

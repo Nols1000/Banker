@@ -5,13 +5,13 @@ Banker.isBankOpen = false
 
 Banker.KeybindStripDescriptor = {
 	{
-		name = GetString("SI_BANKER_KB_SYNC_ITEMS"),
+		name = GetString(SI_BANKER_KB_SYNC_ITEMS),
 		keybind = "SYNC_INVENTORY",
 		callback = function() Banker:stashItems() end,
 		visible = function() return Banker.isBankOpen end,
 	},
 	{
-		name = GetString("SI_BANKER_KB_SAFE_MONEY"),
+		name = GetString(SI_BANKER_KB_SAFE_MONEY),
 		keybind = "AUTO_DEPOSIT_MONEY",
 		callback = function() Banker:safeMoney() end,
 		visible = function() return Banker.isBankOpen end,
@@ -20,6 +20,13 @@ Banker.KeybindStripDescriptor = {
 }
 
 function Banker:initUI()
+	local backpackSpaceViewFragment = ZO_SimpleSceneFragment:New(BackpackSpaceView)
+	local bankSpaceViewFragment = ZO_SimpleSceneFragment:New(BankSpaceView)
+	local goldViewFragment = ZO_SimpleSceneFragment:New(GoldView)
+
+	HUD_SCENE:AddFragmentGroup({ backpackSpaceViewFragment, bankSpaceViewFragment, goldViewFragment })
+	HUD_UI_SCENE:AddFragmentGroup({ backpackSpaceViewFragment, bankSpaceViewFragment, goldViewFragment })
+
 	self:onInventoryUpdate()
 
 	LAM:RegisterAddonPanel("BankerSettings", self.menu.panel)
@@ -127,7 +134,7 @@ function Banker:safeMoney()
 	local mStep = self:getConfigValue("mStep")
 
 	if playerMoney > mMin then
-		local n = math.floor((playerMoney - mMin) / mStep )
+		local n = math.floor( (playerMoney - mMin) / mStep )
 
 		if n > 0 then
 			local tMoney = n * mStep

@@ -2,7 +2,7 @@
     <Controls>
         <TopLevelControl name="BackpackSpaceView">
 			<Dimensions x="180" y="42" />
-			<Anchor point="LEFT" offsetX="50" offsetY="150" />
+			<Anchor point="LEFT" offsetX="50" offsetY="100" />
             <Controls>
                 <Texture name="$(parent)Icon" textureFile="/esoui/art/tooltips/icon_bag.dds">
                     <Dimensions x="25" y="25"/>

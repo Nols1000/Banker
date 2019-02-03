@@ -5,7 +5,7 @@ if Banker == nil then Banker = {} end
 Banker.Addon = {
   name = "Banker",
   version = "2.0.0",
-  displayName = GetString("SI_BANKER_BANKER_NAME"),
+  displayName = GetString(SI_BANKER_NAME),
   author = "Nils-Börge Margotti",
   email = "nilsmargotti@gmail.com",
   website = "https://www.esoui.com/portal.php?uid=6208",
